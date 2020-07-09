@@ -6,8 +6,8 @@ bot.on('message', (msg) => {
     
     var Hi = "hi";
     if (msg.text.toString().toLowerCase().indexOf(Hi) === 0) {
-    bot.sendMessage(msg.chat.id,"Hello dear user");
-    } 
+        bot.sendMessage(msg.from.id, "Hello  " + msg.from.first_name);
+    }
 
     var bye = "bye";
 if (msg.text.toString().toLowerCase().includes(bye)) {
