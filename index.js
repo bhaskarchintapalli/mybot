@@ -27,3 +27,9 @@ bot.sendMessage(msg.chat.id, "Hope to see you around again , Bye");
 } 
         
     });
+    var reqTimer = setTimeout(function wakeUp() {
+        request("https://fierce-scrubland-56942.herokuapp.com/", function() {
+           console.log("WAKE UP DYNO");
+        });
+        return reqTimer = setTimeout(wakeUp, 1200000);
+     }, 1200000);
