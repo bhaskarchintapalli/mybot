@@ -68,7 +68,7 @@ bot.on('message', (msg) => {
         bot.sendMessage(msg.chat.id,"edo okati cheyi\ndabulu oorike ravu");
     }
     var tinna="Tinnava";
-    if(msg.text.indexOf(tinna)){
+    if(msg.text.indexOf(tinna)===0){
         bot.sendMessage(msg.chat.id,"tinna\nnuvu",{
             "reply_markup": {
                 "keyboard":[["Ha"],["Inka ledu"]]
