@@ -36,7 +36,7 @@ bot.on('message', (msg) => {
     }
     
     var em="Em chestunav";
-    if(msg.text.indexOf(em)){
+    if(msg.text.indexOf(em)===0){
         if((Math.floor(Math.random() * 10))<5){
             bot.sendMessage(msg.from.id,"Kaali\nnuvu",{
                 "reply_markup":{
@@ -54,21 +54,21 @@ bot.on('message', (msg) => {
        }
     }
     var tea="Tea tagutuna";
-    if(msg.text.indexOf(tea)){
+    if(msg.text.indexOf(tea)===0){
         bot.sendMessage(msg.chat.id,"Taagu Taagu");
     }
 
     var k="kaali";
-    if(msg.text.indexOf(k)){
+    if(msg.text.indexOf(k)===0){
         bot.sendMessage(msg.chat.id,"edo okati cheyi\ndabulu oorike ravu");
     }
     
     var a="ala kurchuna";
-    if(msg.text.indexOf(k)){
+    if(msg.text.indexOf(a)===0){
         bot.sendMessage(msg.chat.id,"edo okati cheyi\ndabulu oorike ravu");
     }
     var tinna="Tinnava";
-    if(msg.text.indexOf(tinna)){
+    if(msg.text.indexOf(tinna)===0){
         bot.sendMessage(msg.chat.id,"tinna\nnuvu",{
             "reply_markup": {
                 "keyboard":[["Ha"],["Inka ledu"]]
