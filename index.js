@@ -42,15 +42,15 @@ bot.on('message', (msg) => {
                 "reply_markup":{
                     "keyboard":[["ala kurchuna"],["kaali"],["Tea tagutuna"]]
                 }
-            })
+            });
 
        }
        else{
-           bot.sendMessage(msg.from.id,"gaali peelustuna\nnuvu"),{
+           bot.sendMessage(msg.from.id,"gaali peelustuna\nnuvu",{
                "reply_markup":{
                    "keyboard":[["Tea tagutuna"],["ala kurchuna"],["kaali"]]
                }
-           }
+           });
        }
     }
     var tea="Tea tagutuna";
@@ -68,7 +68,7 @@ bot.on('message', (msg) => {
         bot.sendMessage(msg.chat.id,"edo okati cheyi\ndabulu oorike ravu");
     }
     var tinna="Tinnava";
-    if(msg.text.indexOf(tinna)===0){
+    if(msg.text.indexOf(tinna)){
         bot.sendMessage(msg.chat.id,"tinna\nnuvu",{
             "reply_markup": {
                 "keyboard":[["Ha"],["Inka ledu"]]
